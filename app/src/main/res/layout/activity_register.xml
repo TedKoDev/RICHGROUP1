@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".register.RegisterActivity"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/et_pass2"
+                android:layout_width="331dp"
+                android:layout_height="47dp"
+                android:layout_marginStart="27dp"
+                android:layout_marginEnd="58dp"
+                android:ems="10"
+                android:hint="비밀번호 확인 "
+                android:inputType="textPassword"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_pass1" />
+
+            <TextView
+                android:id="@+id/tv_pcheck1"
+                android:layout_width="320dp"
+                android:layout_height="41dp"
+
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="9dp"
+                android:text="비밀번호 조건충족 "
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_pass2" />
+
+            <Button
+                android:id="@+id/btn_mailvali"
+                android:layout_width="114dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="24dp"
+                android:text="중복확인"
+                app:layout_constraintStart_toEndOf="@+id/et_email"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <Button
+                android:id="@+id/btn_Echeck"
+                android:layout_width="106dp"
+                android:layout_height="44dp"
+                android:layout_marginEnd="16dp"
+                android:text="이메일인증"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="76dp"
+                android:layout_height="64dp"
+
+
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="338dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/richgroup" />
+
+            <Button
+                android:id="@+id/btn_nick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="16dp"
+                android:text="중복확인"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_pcheck1" />
+
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+
+                android:text="전체 동의"
+                android:textColor="#6A6666"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/checkbox3" />
+
+            <CheckBox
+                android:id="@+id/checkbox2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:text="[필수] 서비스 이용 약관"
+                android:textColor="#6A6666"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_nick" />
+
+            <Button
+                android:id="@+id/btn_agr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="112dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintStart_toEndOf="@+id/checkbox2"
+                app:layout_constraintTop_toBottomOf="@+id/et_nick" />
+
+            <CheckBox
+                android:id="@+id/checkbox3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="12dp"
+
+                android:layout_weight="1"
+                android:text="[필수] 개인정보 취급방침"
+                android:textColor="#6A6666"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/checkbox2" />
+
+            <Button
+                android:id="@+id/btn_agr2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="104dp"
+                android:layout_marginTop="12dp"
+                app:layout_constraintStart_toEndOf="@+id/checkbox3"
+                app:layout_constraintTop_toBottomOf="@+id/checkbox2" />
+
+            <EditText
+                android:id="@+id/tv_echeck"
+                android:layout_width="255dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="32dp"
+                android:gravity="center"
+                android:hint="인증번호를 입력하세요"
+                android:inputType="textPersonName"
+                android:text=""
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_email" />
+
+            <Button
+                android:id="@+id/emailCodeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="19dp"
+                android:text="인증하기"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tv_echeck"
+                app:layout_constraintTop_toBottomOf="@+id/btn_Echeck" />
+
+            <EditText
+                android:id="@+id/et_nick"
+                android:layout_width="223dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="27dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="60dp"
+                android:ems="10"
+                android:hint="닉네임 "
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toStartOf="@+id/btn_nick"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_pcheck1" />
+
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="231dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="7dp"
+                android:ems="10"
+                android:hint="E-mail계정을 입력하세요"
+                android:inputType="textPersonName"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+            <EditText
+                android:id="@+id/et_pass1"
+                android:layout_width="331dp"
+                android:layout_height="47dp"
+                android:layout_marginStart="27dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="58dp"
+                android:ems="10"
+                android:hint="비밀번호(8글자 영어숫자특수문자)"
+                android:inputType="textPassword"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_echeck" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="82dp"
+                android:layout_height="23dp"
+                android:layout_marginStart="29dp"
+                android:layout_marginEnd="305dp"
+
+                android:text="회원가입"
+
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="회원가입"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/checkbox"
+                app:layout_constraintVertical_bias="0.818" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="TextView"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

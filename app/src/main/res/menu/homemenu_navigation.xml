@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/grdashboard"
+        android:title="Dashboard"
+        android:icon="@drawable/ic_dashboard"/>
+
+    <item
+        android:id="@+id/grchat"
+        android:title="Chat"
+        android:icon="@drawable/ic_chat"/>
+    <item
+        android:id="@+id/grabout"
+        android:title="Set"
+        android:icon="@drawable/ic_about"/>
+
+
+</menu>

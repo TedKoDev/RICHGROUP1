@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="my_array">
+        <item>주식</item>
+        <item>코인</item>
+        <item>부동산</item>
+        <item>채권</item>
+        <item>외화</item>
+        <item>기타</item>
+    </string-array>
+
+</resources>

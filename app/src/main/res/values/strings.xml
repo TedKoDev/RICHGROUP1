@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">SG</string>
+    <string name="app_arp">서비스이용약관</string>
+    <string name="app_arp2">개인정보 취급약관</string>
+    <string name="underlined_text"><u>보기</u></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="onoff">공개 비공개 타입설정</string>
+    <string name="onoffoff">-모임의 비밀번호를 입력하고 입장이 가능합니다.</string>
+    <string name="onoffon">-누구나 소개와 게시글을 볼수있습니다.</string>
+    <string name="title_activity_main6">MainActivity6</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="RichGroup">RichGroup</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="private_app_id">642639f0df7a457aa25f14b223ed87ff</string>
+    <string name="host">Host</string>
+    <string name="audience">Audience</string>
+    <string name="radiotext">Create a live broadcast or join an existing one</string>
+    <string name="channelprompt">Enter Channel Name:</string>
+    <string name="submit">Submit</string>
+    <string name="single_input">Single line input</string>
+    <string name="str_msg_single">Point to point message</string>
+    <string name="str_msg_channel">Channel message</string>
+    <string name="str_join_channe_failed">Join channel failed</string>
+    <string name="str_online">(Online)</string>
+    <string name="str_not_online">(Not online)</string>
+    <string name="str_msg_not_empty">The account is empty</string>
+    <string name="str_msg_not_128">The account is no more than 128</string>
+    <string name="str_msg_not_contains_space">The account contains space</string>
+    <string name="str_msg_cannot_yourself">The account cannot be yourself</string>
+    <string name="str_msg_net_bad">Login Failed for the network is not available</string>
+    <string name="str_login">Login</string>
+    <string name="str_chat">Chat</string>
+    <string name="str_join">Join</string>
+    <string name="str_send">Send</string>
+    <string name="str_friend">Friends name</string>
+    <string name="str_channel">Channel name</string>
+    <string name="str_account">Account</string>
+</resources>

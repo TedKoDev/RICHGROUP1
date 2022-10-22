@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".mainfragment.SearchFragment">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/logname"
+        android:visibility="gone"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/homeiv1"
+            android:layout_width="83dp"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/richgroup" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="찾기"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:layout_gravity="center"
+            />
+<!--        &lt;!&ndash;가운데 빈공간 주기 &ndash;&gt;-->
+<!--        <View-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:layout_weight="1"-->
+<!--            />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/homeaddbtn1"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="모임만들기"-->
+<!--            android:textStyle="bold"-->
+<!--            android:layout_gravity="right"-->
+
+<!--            />-->
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        >
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="44dp"
+            android:src="@drawable/ic_search"
+            android:layout_marginStart="10dp"/>
+
+        <EditText
+            android:id="@+id/serchET"
+            android:layout_width="match_parent"
+            android:focusable="false"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <View
+                        android:layout_width="30dp"
+                        android:layout_height="0dp"
+
+                        />
+
+
+
+    </LinearLayout>
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="주제별 찾기"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="20dp"-->
+<!--                android:layout_marginStart="25dp"-->
+<!--                android:layout_marginTop="20dp"/>-->
+<!--            <View-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                />-->
+<!--    <GridLayout-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:columnCount="3"-->
+<!--        android:layout_gravity="center_horizontal"-->
+
+<!--        >-->
+
+<!--        <Button-->
+<!--            android:id="@+id/keywordcoin"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="코인"-->
+<!--            android:layout_marginEnd="10dp"-->
+<!--            />-->
+<!--        <Button-->
+<!--            android:id="@+id/keywordland"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="부동산"-->
+<!--            android:layout_marginEnd="10dp"-->
+<!--            />-->
+<!--        <Button-->
+<!--            android:id="@+id/keywordstock"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="주식"-->
+<!--            android:layout_marginEnd="10dp"-->
+<!--            />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/keywordmoney"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="외화"-->
+<!--            android:layout_marginEnd="10dp"-->
+<!--            />-->
+<!--        <Button-->
+<!--            android:id="@+id/keywordpaper"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="채권"-->
+<!--            android:layout_marginEnd="10dp"-->
+<!--            />-->
+<!--        <Button-->
+<!--            android:id="@+id/keywordother"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="기타"-->
+<!--            android:layout_marginEnd="10dp"-->
+<!--            />-->
+
+
+<!--    </GridLayout>-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="전체 모임방"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"/>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarDefaultDelayBeforeFade="10000"
+        android:scrollbarFadeDuration = "20"
+        android:scrollbarAlwaysDrawVerticalTrack = "true"
+        android:scrollbarSize="10dp"
+        android:scrollbars="vertical"
+        android:scrollbarThumbVertical="@color/purple_700"
+        android:id="@+id/scroll_view">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/serchrecyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#41C5BDBD"
+             android:nestedScrollingEnabled="false"/>
+    </androidx.core.widget.NestedScrollView>
+
+    <ProgressBar
+        android:id="@+id/progress_circular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        />
+
+</LinearLayout>

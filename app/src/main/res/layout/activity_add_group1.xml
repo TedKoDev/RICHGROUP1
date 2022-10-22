@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ADD.AddGroupActivity1">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/logname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="로그인유저:"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/gruserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/grnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="그룹번호:"
+            android:visibility="gone"
+
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivback1"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:src="@drawable/back"
+            android:textAlignment="center" />
+
+
+        <!--가운데 빈공간 주기 -->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="모임의 카테고리를 선택하세요."
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="RichGroup은 모두의 공간입니다."
+        android:textColor="#838282"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+
+        android:columnCount="3"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/addkeywordcoin"
+            android:layout_width="wrap_content"
+            android:layout_height="91dp"
+
+            android:layout_marginEnd="10dp"
+            android:text="코인"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/addkeywordland"
+            android:layout_width="wrap_content"
+            android:layout_height="91dp"
+            android:layout_marginEnd="10dp"
+            android:text="부동산"
+            android:layout_gravity="top"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/addkeywordstock"
+            android:layout_width="wrap_content"
+            android:layout_height="91dp"
+            android:layout_marginEnd="10dp"
+
+            android:text="주식"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/addkeywordmoney"
+            android:layout_width="wrap_content"
+            android:layout_height="91dp"
+            android:layout_marginEnd="10dp"
+            android:text="외화"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <!--가운데 빈공간 주기 -->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+        <Button
+            android:id="@+id/addkeywordpaper"
+            android:layout_width="wrap_content"
+            android:layout_height="91dp"
+            android:layout_marginEnd="10dp"
+            android:text="채권"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/addkeywordtech"
+            android:layout_width="wrap_content"
+            android:layout_height="91dp"
+            android:layout_marginEnd="10dp"
+            android:text="재테크"
+            android:textSize="17dp"
+            android:layout_gravity="bottom"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/addkeywordpstudy"
+            android:layout_width="wrap_content"
+            android:layout_height="91dp"
+            android:layout_marginEnd="10dp"
+            android:text="스터디"
+            android:textSize="17dp"
+            android:layout_gravity="bottom"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/addkeywordwhat"
+            android:layout_width="wrap_content"
+            android:layout_height="91dp"
+            android:layout_marginEnd="10dp"
+            android:text="직접\n입력"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+    </GridLayout>
+
+    <EditText
+        android:id="@+id/addkeywordwhatET"
+        android:layout_width="306dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:hint="직접 입력해주세요."
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/add1next"
+        android:layout_width="wrap_content"
+        android:layout_height="63dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+
+        android:text="선택완료"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+</LinearLayout>

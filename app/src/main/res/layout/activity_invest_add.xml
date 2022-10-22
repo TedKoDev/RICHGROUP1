@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".mainfragment.InvestAdd">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="로그인유저:"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/inaddlogname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/invaddback"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:src="@drawable/back"
+            android:clickable="true"
+
+            android:textAlignment="center"
+            android:focusable="true" />
+
+
+        <!--가운데 빈공간 주기 -->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp" />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:text="항목추가"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="분류"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/investkind"
+                android:layout_width="232dp"
+                android:layout_height="wrap_content"
+                android:textColor="#FF0000"
+                android:textSize="30dp" />
+
+            <Spinner
+                android:id="@+id/investspinner"
+                android:layout_width="120dp"
+                android:layout_height="40dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="품명"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/ivetname"
+            android:layout_width="229dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_rounded_corner_rectangle" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="수량"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/invetcount"
+            android:layout_width="229dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_rounded_corner_rectangle"
+            android:hint="숫자만 입력하세요"
+          />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="매수가"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/invetbuy"
+            android:layout_width="229dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_rounded_corner_rectangle"
+            android:hint="숫자만 입력하세요"
+            android:inputType="number" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="현재가"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/invetnow"
+            android:layout_width="229dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_rounded_corner_rectangle"
+            android:hint="숫자만 입력하세요"
+            android:inputType="number" />
+
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+
+            android:id="@+id/invaddbtn"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="작성완료"
+            android:textStyle="bold"
+
+            />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>

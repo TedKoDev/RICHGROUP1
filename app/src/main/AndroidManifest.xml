@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.RG">
+    <!-- 인터넷 연결 확인 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:name=".register.KakaoApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.RG"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="n">
+        <activity
+            android:name=".INorNOTActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AllLiveListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LiveStreaming.VideoPlayerActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false" />
+        <activity
+            android:name=".LiveStreaming.UploadActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LiveStreaming.LiveActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".LiveStreaming.LiveActivity1"
+            android:exported="false" />
+        <activity
+            android:name=".KakaoLogoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".More.MoreMypwdChange"
+            android:exported="false" />
+        <activity
+            android:name=".More.MoreMyNickChange"
+            android:exported="false" />
+        <activity
+            android:name=".More.MoreMyAccount"
+            android:exported="false" />
+        <activity
+            android:name=".mainfragment.Investreplace"
+            android:exported="false" />
+        <activity
+            android:name=".mainfragment.InvestAdd"
+            android:exported="false" />
+        <activity
+            android:name=".Chatting.ChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Chatting.ChatActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".mainfragment.keysearchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".post.PostUpdateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Groupintro.GroupNameImgSetActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Groupintro.GroupIntroActivity"
+            android:exported="false" />
+        <activity
+            android:name=".More.MySettingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Groupintro.GroupSettingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ADD.AddGroupActivity1"
+            android:exported="false" />
+        <activity
+            android:name=".post.PostdetailActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".ADD.AddGrpostActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Home_group.GroupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ADD.AddGroupActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".register.kakaologin"
+            android:exported="false" />
+        <activity
+            android:name=".register.FindPassActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StartActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustUnspecified">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <data
+                    android:host="action"
+                    android:scheme="richgorupgam" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".register.LoginActivity" />
+        <activity
+            android:name=".register.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.kakao.sdk.auth.AuthCodeHandlerActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <!-- Redirect URI: "kakao{NATIVE_APP_KEY}://oauth" -->
+                <data
+                    android:host="oauth"
+                    android:scheme="kakao602a2d05cdac0e251b9fa7bc1a93a590" />
+            </intent-filter>
+        </activity> <!-- <meta-data -->
+        <!-- android:name="android.max_aspect" -->
+        <!-- android:value="2.1" /> -->
+        <service android:name=".ChatService" />
+    </application>
+
+</manifest>

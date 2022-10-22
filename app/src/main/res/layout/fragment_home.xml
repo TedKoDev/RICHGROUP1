@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".mainfragment.HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/logname"
+        android:visibility="gone"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <ImageView
+        android:id="@+id/homeiv1"
+        android:layout_width="83dp"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/richgroup" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="홈"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:layout_gravity="center"
+        />
+<!--가운데 빈공간 주기 -->
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+
+    <Button
+      android:id="@+id/homeaddbtn1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="모임만들기"
+      android:textStyle="bold"
+      android:layout_gravity="right"
+
+      />
+</LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/homescroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbarDefaultDelayBeforeFade="10000"
+            android:scrollbarFadeDuration = "20"
+            android:scrollbarAlwaysDrawVerticalTrack = "true"
+            android:scrollbarSize="10dp"
+            android:scrollbars="vertical"
+            android:scrollbarThumbVertical="@color/purple_700"
+            >
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/homgrecyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#41FFFFFF"
+
+                />
+
+        </androidx.core.widget.NestedScrollView>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

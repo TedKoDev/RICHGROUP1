@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".More.MoreMyAccount">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="로그인유저:"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/logname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/setback"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:src="@drawable/back"
+            android:textAlignment="center" />
+
+
+        <TextView
+            android:id="@+id/tv_checkpw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="비밀번호 확인 "
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_checkpwre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="비밀번호 재설정 "
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/layoutnowpwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:ellipsize="end"
+
+                android:text="회원님의 소중한 정보 보호를 위해, 계정의 현재 \n비밀번호를 확인해 주세요. "
+                android:textColor="#817F7F"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/nowid"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:layout_marginStart="5dp"
+                android:gravity="center_vertical"
+                android:text="현재 아이디. "
+                android:textSize="20dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:background="@color/gray" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="331dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="30dp"
+                app:passwordToggleEnabled="true">
+
+
+                <EditText
+                    android:id="@+id/nowpass"
+                    android:layout_width="331dp"
+                    android:layout_height="60dp"
+
+
+                    android:hint="비밀번호 확인 "
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/btn_nowpass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="5dp"
+                android:text="확인"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pwdchangelayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical"
+            android:visibility="gone">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:ellipsize="end"
+
+                android:gravity=""
+                android:maxLines="1"
+                android:text="변경할 비밀번호: "
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="331dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="30dp"
+                app:passwordToggleEnabled="true">
+
+                <EditText
+                    android:id="@+id/newpwd1"
+                    android:layout_width="331dp"
+                    android:layout_height="60dp"
+
+                    android:ems="10"
+                    android:hint="비밀번호(8글자 영어숫자특수문자)"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="331dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                app:passwordToggleEnabled="true">
+
+                <EditText
+                    android:id="@+id/newpwd2"
+                    android:layout_width="331dp"
+                    android:layout_height="60dp"
+
+                    android:ems="10"
+                    android:hint="비밀번호 확인 "
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/newpwdcheck"
+                android:layout_width="320dp"
+                android:layout_height="41dp"
+
+
+                android:text="비밀번호 조건충족 "
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnpwdchagne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="5dp"
+                android:text="변경하기"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutkalogpwdchag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/textcannotchange"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="카카오톡로그인 입니다.\n 비밀번호 변경이 불가합니다."
+            android:textColor="@color/black"
+            android:textSize="20dp"
+         />
+
+        <Button
+            android:id="@+id/btncannotchange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:layout_marginTop="20dp"
+            android:text="돌아가기"
+
+            android:visibility="visible" />
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+
+</LinearLayout>

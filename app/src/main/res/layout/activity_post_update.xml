@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".post.PostUpdateActivity">
+
+    <TextView
+        android:id="@+id/logname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+
+
+    <TextView
+        android:id="@+id/gr_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:id="@+id/grpivback"
+            android:src="@drawable/back"
+            android:textAlignment="center"/>
+
+        <!--가운데 빈공간 주기 -->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            />
+
+
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/grpiv"
+        android:layout_width="186dp"
+        android:layout_height="168dp"
+        android:layout_marginTop="20dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:layout_gravity="center"
+        android:src="@android:color/black" />
+
+
+    <EditText
+        android:id="@+id/grpdisc"
+        android:layout_width="306dp"
+        android:layout_height="216dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/memo_border"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="내용을 작성하세요"
+        android:inputType="textMultiLine"
+
+        android:scrollHorizontally="false"
+        android:textColor="@android:color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+        <Button
+            android:id="@+id/grpgetimage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="사진선택"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold" />
+        <!--가운데 빈공간 주기 -->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            />
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        />
+
+    <Button
+        android:id="@+id/grpupload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:drawableEnd="@drawable/ic_baseline_add_24"
+        android:text="        작성완료"
+
+        android:layout_margin="10dp"
+        android:textStyle="bold" />
+
+</LinearLayout>

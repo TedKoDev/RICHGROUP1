@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:layout_marginTop="150dp"
+    android:orientation="vertical"
+    tools:context=".LiveStreaming.UploadActivity">
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:text="영상을 그룹에 게시 하시겠습니까?" />
+
+    <TextView
+        android:id="@+id/tvfilename"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="영상을 업로드 하시겠습니까?"
+
+        android:visibility="gone" />
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:orientation="horizontal">
+
+    <Button
+        android:layout_margin="20dp"
+        android:id="@+id/cancle"
+        android:text="취소하기"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_margin="20dp"
+        android:id="@+id/sending"
+        android:text="게시하기"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ADD.AddGroupActivity2">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="로그인유저:"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/logname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/gruserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="그룹번호:"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/grnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="카테고리:"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/cate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"  />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivback"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:src="@drawable/back"
+            android:textAlignment="center" />
+
+        <!--가운데 빈공간 주기 -->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/uploadimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:text="저장하기"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="사진을 선택해주세요." />
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="133dp"
+            android:layout_height="134dp"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@android:drawable/ic_menu_camera" />
+
+
+        <!--        <Button-->
+        <!--            android:id="@+id/pickimg"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_gravity="center"-->
+        <!--            android:layout_marginRight="10dp"-->
+        <!--            android:text="사진선택"-->
+        <!--            -->
+        <!--            android:textStyle="bold" />-->
+
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/imgname"
+        android:layout_width="306dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:hint="그룹명"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/imginfo"
+        android:layout_width="306dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:hint="모임소개 "
+        android:textColor="@android:color/black" />
+
+
+    <ProgressBar
+        android:id="@+id/pb_img"
+        android:layout_width="wrap_content"
+        android:layout_height="13dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:visibility="invisible" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="공개/비공개"
+        android:textSize="30dp" />
+    <TextView
+        android:id="@+id/grtypetv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        android:textSize="30dp" />
+
+
+    <TextView
+        android:id="@+id/grtypeimgbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="타입설정 "
+        android:textColor="#000000"
+        android:textSize="30dp" />
+
+    <LinearLayout
+        android:id="@+id/grouppwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:orientation="horizontal">
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="#000000"
+            android:text="비밀번호"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/grouppwd2"
+            android:layout_width="199dp"
+            android:inputType="numberPassword"
+
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+</LinearLayout>
