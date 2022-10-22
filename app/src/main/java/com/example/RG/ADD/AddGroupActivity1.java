@@ -27,6 +27,8 @@ public class AddGroupActivity1 extends AppCompatActivity {
     ImageView ivback1;
 
 
+    Button 깃테스트용1;
+
     String loginname,whatET;
     EditText addkeywordwhatET;
     TextView logname, grnum, grtypetv, grtypeimgbtn;
